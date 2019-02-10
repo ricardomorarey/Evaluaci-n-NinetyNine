@@ -8,6 +8,7 @@ import retrofit2.http.Path
 
 interface CompaniesService {
 
+    //Creo mi interface necesari para el uso de retrofit
     @GET("companies")
     fun getCompaniesList(): Call<List<Companies>>
 

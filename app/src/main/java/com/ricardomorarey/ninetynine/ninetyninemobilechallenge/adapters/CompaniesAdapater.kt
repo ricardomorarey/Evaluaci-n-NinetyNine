@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.list_view_companies.view.*
 
 class CompaniesAdapater (val context: Context, val layout: Int, val list: List<Companies>) : BaseAdapter(){
 
+    //Creo mi propio adaptador de la listview para poder mostrar loo que quiero y como quiero
     private val mImflator: LayoutInflater = LayoutInflater.from(context)
 
     override fun getItem(position: Int): Any {
@@ -39,7 +40,6 @@ class CompaniesAdapater (val context: Context, val layout: Int, val list: List<C
             viewHolder = view.tag as CompaniesViewHolder
         }
 
-        viewHolder.company_id.text = "${list[position].id}"
         viewHolder.company_name.text = "${list[position].name}"
         viewHolder.company_ric.text = "${list[position].ric}"
         viewHolder.company_sharePrice.text = "${list[position].sharePrice}"
@@ -49,7 +49,7 @@ class CompaniesAdapater (val context: Context, val layout: Int, val list: List<C
 }
 
 private class CompaniesViewHolder (view: View){
-    val company_id: TextView = view.textView_company_id
+
     val company_name: TextView = view.textView_company_name
     val company_ric: TextView = view.textView_company_ric
     val company_sharePrice: TextView = view.textView_company_sharePrice

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ninety Nine Mobile Challenge</string>
+    <string name="Name">TextView</string>
+    <string name="ric">TextView</string>
+    <string name="sharedprice">TextView</string>
+    <string name="description">TextView</string>
+    <string name="country">TextView</string>
+    <string name="back">Back</string>
+</resources>
